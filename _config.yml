@@ -21,10 +21,10 @@ plugins:
 - jekyll-remote-theme
 
 # Site settings
-url: 'https://mydomain.com'
+url: 'https://austinmleziva.com'
 baseurl: ''
-title: 'My website'
-description: 'This is my new website'
+title: 'AustinMleziva.com'
+description: 'Austin Mleziva Ramblings'
 permalink: pretty
 logo: "https://th.bing.com/th/id/OIP.dFEoEp-vtOOAozCbyUSv1AAAAA?w=145&h=180&c=7&o=5&pid=1.7"
 
@@ -38,8 +38,8 @@ navigation_header:
   url: /
 - title: About
   url: /about/
-- title: Blog
-  url: /blog/
+- title: Posts
+  url: /posts/
 
 # Footer nav
 navigation_footer:
@@ -53,7 +53,7 @@ collections:
     output: true
     description: "My thoughts and ideas"
     feature_text: |
-      Welcome to my blog
+      Welcome to my site
     feature_image: "https://picsum.photos/2560/600?image=866"
 
 # Collection settings

@@ -14,3 +14,9 @@ Add jekyll-remote-theme to the list of plugins in your _config.yml file
 Add remote_theme: daviddarnes/alembic@main to your _config.yml file to set the site theme
 Run bundle exec jekyll serve to build and serve your site
 Done! Use the configuration documentation and the example _config.yml file to set things like the navigation, contact form and social sharing buttons
+
+Running locally:
+```
+bundle install
+bundle exec jekyll serve --incremental
+```
