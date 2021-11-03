@@ -6,10 +6,22 @@ styles: true
 @import "alembic";
 
 .feature {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  color: #333;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  background-color: #fff;
+}
+
+#hi-im-austin {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
 //   body {
 //     background-color:#000;
 //     color:#fff;
