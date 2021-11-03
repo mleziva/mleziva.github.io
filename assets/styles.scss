@@ -9,6 +9,7 @@ styles: true
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  background-position: 0px 0px;
 }
 body {
   color: #333;
@@ -17,8 +18,16 @@ body {
   line-height: 1.4;
   background-color: #fff;
 }
-.feature {
-  background-position: 0px 0px;
+.logo img {
+  max-height: 3rem;
+}
+body .main h1{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  width: 90%;
+  max-width: none;
+  margin: 0 auto;
 }
 
 //   body {
