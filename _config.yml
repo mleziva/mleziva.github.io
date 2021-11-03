@@ -22,7 +22,7 @@ plugins:
 
 # Site settings
 url: 'https://austinmleziva.com'
-baseurl: ''
+baseurl: 'https://austinmleziva.com'
 title: 'AustinMleziva.com'
 description: 'Austin Mleziva Ramblings'
 permalink: pretty
