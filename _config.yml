@@ -42,9 +42,9 @@ navigation_header:
   url: /posts/
 
 # Footer nav
-navigation_footer:
-- title: Back to top
-  url: "#top"
+# navigation_footer:
+# - title: Back to top
+#   url: "#top"
 
 # Collections
 collections:

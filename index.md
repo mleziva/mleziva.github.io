@@ -8,7 +8,6 @@ feature_text: |
 There isn't much going on here yet, but watch this space
 
 Todo:
-Add cool java script thing
 Add pictures
 Add blog categories and start posting
 

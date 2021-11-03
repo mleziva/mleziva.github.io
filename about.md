@@ -16,6 +16,7 @@ canvas {
 </style>
 
 <script>
+    // https://codepen.io/davekwiatkowski/pen/LyvXWK?editors=1111
 window.onload = () => {
 	const CANVAS = document.getElementsByTagName("canvas")[0];
 	const CTX = CANVAS.getContext("2d");
