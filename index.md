@@ -5,10 +5,5 @@ feature_text: |
   
 ---
 
-There isn't much going on here yet, but watch this space
-
-Todo:
-Add pictures
-Add blog categories and start posting
-
+Welcome to my personal site, there isn't much here, but I will be updating it soon!
 
