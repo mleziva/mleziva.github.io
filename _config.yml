@@ -53,8 +53,8 @@ collections:
     output: true
     description: "My thoughts and ideas"
     feature_text: |
-      Welcome to my site
-    feature_image: "https://picsum.photos/2560/600?image=866"
+      
+    feature_image: "http://4.bp.blogspot.com/-JtRi6khHy5k/UZcYeCmqxBI/AAAAAAAAQm4/UBVl6e9luAY/s1600/Windows-XP-Facebook-cover.jpg"
 
 # Collection settings
 defaults:

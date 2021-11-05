@@ -1,7 +1,7 @@
 ---
-title: Hello World
+title: What Do I do for fun
 categories:
-- General
+- Hobbies
 feature_image: "https://picsum.photos/2560/600?image=872"
 ---
 
