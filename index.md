@@ -4,4 +4,8 @@ feature_image: "https://github.com/mleziva/mleziva.github.io/blob/master/assets/
 feature_text: |
 ---
 
-Welcome to my personal site, there isn't much here, but I will be updating it soon!
+Welcome to my personal site that I use for authoring technical articles, talking about my hobbies and ideas, and just general ramblings.
+
+<p>
+I recently updated the about page, check it out!
+</p>

@@ -20,3 +20,7 @@ Running locally:
 bundle install
 bundle exec jekyll serve --incremental
 ```
+
+Austin's Todo list:
+Add pages for hobbies and link from home page
+Make about page look better
