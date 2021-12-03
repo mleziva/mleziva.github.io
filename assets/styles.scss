@@ -21,6 +21,11 @@ body {
 .logo img {
   max-height: 3rem;
 }
+
+body .main h2{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 10px;
+}
 body .main h1{
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -28,6 +33,31 @@ body .main h1{
   width: 90%;
   max-width: none;
   margin: 0 auto;
+}
+
+//about
+body .main .about-content{
+  text-align: center;
+}
+.about-content ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+ul li {
+  display: inline-block;
+}
+li.counter-contents{
+  margin: 0 50px;
+}
+div.counter-contents{
+  display: grid;
+}
+.counter-contents img{
+  display: block;
+  margin: auto;
+}
+.countup {
+  font-size: xx-large;
 }
 
 //   body {

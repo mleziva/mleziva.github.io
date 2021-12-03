@@ -10,7 +10,14 @@ const easeOutQuad = t => t * ( 2 - t );
 // The animation function, which takes an Element
 const animateCountUp = el => {
 	let frame = 0;
-	const countTo = parseInt( el.innerHTML, 10 );
+	let startdate = el.getAttribute('startdate')
+	const peryear = el.getAttribute('peryear')
+	let increment = peryear/365 * days_from_today(startdate)
+	const countTo = parseInt( el.innerHTML, 10 ) + increment;
+	const animationDuration = 2000 + countTo * 5;
+	const frameDuration = 1000 / 60;
+	const totalFrames = Math.round( animationDuration / frameDuration );
+	
 	// Start the animation running 60 times per second
 	const counter = setInterval( () => {
 		frame++;
@@ -33,6 +40,12 @@ const animateCountUp = el => {
 	}, frameDuration );
 };
 
+function days_from_today(startdate){
+	var startdate = new Date(startdate);  
+	let currentDate = new Date()
+	let days_difference = (currentDate.getTime() - startdate.getTime())/(1000 * 60 * 60 * 24);  
+	return days_difference;
+}
 // Run the animation on all elements with a class of ‘countup’
 const runAnimations = () => {
 	const countupEls = document.querySelectorAll( '.countup' );

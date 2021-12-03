@@ -38,6 +38,8 @@ navigation_header:
   url: /
 - title: About
   url: /about/
+- title: Hackerman
+  url: /hackerman/
 - title: Posts
   url: /posts/
 
