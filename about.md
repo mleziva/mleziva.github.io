@@ -5,7 +5,7 @@ title: What has Austin been up to?
 <!-- <button onclick="runAnimations()">Animate</button> -->
 <body onload="runAnimations()">
 <div class="about-content">
-<img src="assets/Austin_Grand_Canyon.jpg"/>
+<img src="https://github.com/mleziva/mleziva.github.io/blob/master/assets/img/Austin_Grand_Canyon.jpg?raw=true"/>
 <hr/>
 <h2>
 Hobbies
