@@ -2,12 +2,10 @@
 title: What has Austin been up to?
 ---
 
-<!-- <button onclick="runAnimations()">Animate</button> -->
-<body onload="runAnimations()">
 <div class="about-content">
 <img src="https://github.com/mleziva/mleziva.github.io/blob/master/assets/img/Austin_Grand_Canyon.jpg?raw=true"/>
 <hr/>
-<h2>
+<h2 id="basic-waypoint">
 Hobbies
 </h2>
 <ul>
@@ -76,7 +74,20 @@ Stack Overflow
     </div>
   </li>
 </ul>
-
+<p>
+Icons sourced from: https://icons8.com/icons
+</p>
 </div>
 
-<script async src="/assets/js/countup.js"></script>
+<script src="/assets/js/countup.js"></script>
+<script src="/assets/js/noframework.waypoints.min.js"></script>
+<script>
+var waypoint = new Waypoint({
+  element: document.getElementById('basic-waypoint'),
+  handler: function() {
+	  	runAnimations()
+	  	waypoint.disable()
+  },
+  offset: '25%'
+})
+	</script>
