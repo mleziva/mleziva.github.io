@@ -21,6 +21,9 @@ bundle install
 bundle exec jekyll serve --incremental
 ```
 
-Austin's Todo list:
+## Deploying 
+Simply make a change and push to master
+
+## Todo
 Add pages for hobbies and link from home page
 Make about page look better
