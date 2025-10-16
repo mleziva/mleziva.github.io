@@ -21,6 +21,9 @@ bundle install
 bundle exec jekyll serve --incremental
 ```
 
+## Development
+Requires Ruby
+
 ## Deploying 
 Simply make a change and push to master
 
