@@ -6,13 +6,13 @@ tags: [consulting, discovery, architecture, agile, project management, customer 
 description: The goals, preparation, facilitation, and deliverables I use to run technical discovery with enterprise customers, plus the mistakes I see most often and a success story from a Fortune 500 engagement.
 ---
 
-Most of the projects I have seen go sideways did not fail because of the code. They failed in the first few weeks, when the team agreed to build something before anyone really understood the problem. Technical discovery is the cheapest place to fix that. A wrong assumption caught on a whiteboard costs an afternoon. The same assumption caught after three sprints costs a release.
+Most of the projects I have seen go sideways did not fail because of the code (some did, though that's becoming rarer as AI-assisted development improves). These projects failed in the first few weeks, when the team agreed to build something before anyone really understood the problem. A good technical discovery session is the best way to prevent those issues. It allows you to catch a lot of assumptions up front, not after multiple sprints.
 
-Over 15 years of consulting, including my time at Microsoft and AWS, I have run discovery sessions and project kickoffs for customers ranging from small teams to Fortune 500 enterprises. This post walks through how I approach them: what the session is for, how I prepare, how I run the room, what I hand over afterward, and the mistakes I see most often. I'll finish with a story from an engagement where this approach made the difference.
+Over 11 years of consulting, including my time at Microsoft and AWS, I have run discovery sessions and project kickoffs for customers ranging from small teams to Fortune 500 enterprises. This post walks through how I approach them: what the session is for, how I prepare, how I run the room, what I hand over afterward, and the mistakes I see most often. I'll finish with a story from an engagement where I led a team that embraced these techniques, and it paid off.
 
 ## What a discovery session is actually for
 
-A discovery session is not a sales meeting and it is not a design review. It has a handful of goals, and every part of the agenda should serve at least one of them.
+A discovery session is not a sales meeting and it is not a design review. Typically customers don't have a clear design at this point. The session has a handful of goals, and every part of the agenda should serve at least one of them.
 
 ### Establish rapport
 
@@ -205,7 +205,7 @@ Finally, I define what goes into the first release, and just as importantly, wha
 
 ## Common mistakes I've seen
 
-Over 15 years, the same few mistakes come up again and again.
+Over 11 years, the same few mistakes come up again and again.
 
 ### Not listening to the customer
 
@@ -227,10 +227,7 @@ The opposite failure is a discovery phase that never ends: months of diagrams, d
 
 ### The customer and the idea
 
-A Fortune 500 customer came to us with a novel idea: connect invoicing and payments in a single business-to-business platform, built entirely in the cloud. The idea was strong, but the customer had very little experience building software, and even less with the cloud.
-
-> **TODO (Austin):** Add the timeframe, which company you were with at the time (Microsoft or AWS), the team size, and any non-confidential context about the industry.
-{: .prompt-warning }
+A Fortune 500 customer came to us with a novel idea: connect invoicing and payments in a single business-to-business platform, built entirely in the cloud. The idea was strong, but the customer had very little experience building software, and even less with the cloud. This was around 2018, when the cloud was well established. The customer came to Microsoft for its expertise and guidance and wanted the platform to run on Azure.
 
 ### Introducing a new way of working
 
@@ -257,19 +254,17 @@ We achieved efficiency by prioritizing features that were both **the most import
 
 That gave the customer working, valuable software early, which built their confidence in both the platform and the new way of working.
 
-### Scaling with serverless
+### Scaling with managed PaaS services
 
-To speed up the time to go live, we built on **serverless** technologies in the cloud. Using managed, serverless services meant the team didn't have to provision or operate servers, the platform scaled with demand automatically, and the customer paid for what it used. For a customer with little cloud operations experience, removing that operational burden was as important as the speed it gave us.
+To speed up the time to go live, we built on **managed platform-as-a-service (PaaS)** offerings in the cloud. Using managed services meant the team had no virtual machines to patch or operating systems to maintain, and scaling was handled by the platform rather than by the team. For a customer with little cloud operations experience, removing that operational burden was as important as the speed it gave us.
 
-> **TODO (Austin):** Name the cloud platform and the main services used (for example compute, API, data, and messaging services), and add one or two sentences on the architecture.
-{: .prompt-warning }
+The solution was built on Azure App Service. An Azure SQL Database was the central source of truth, replicated across several regions. We used Azure Active Directory and Azure AD B2C to build out the identity system, relying on well-tested services instead of building our own.
 
 ### The outcome
 
 The customer was happy with the result. Over the course of the project, their vision changed and the product evolved with it, and that was a good thing. A rigid plan written in the first month would have delivered what they *thought* they wanted. Because we started with good discovery, kept product and engineering in constant contact, and worked iteratively, we delivered what they actually needed as their understanding grew.
 
-> **TODO (Austin):** Add any results you're able to share, such as time from kickoff to go-live, number of customers or transactions on the platform, or what the customer did next (for example, expanding the platform or taking over ownership internally).
-{: .prompt-warning }
+As with any good consulting project, the goal is to transition it over to the customer. As their number of users grew into the thousands, more of my time was focused on ramping up customer engineers, providing guidance and documentation while my hands-on-keyboard time was reduced. 
 
 ## Key takeaways
 
