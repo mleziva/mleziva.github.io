@@ -1,3 +1,57 @@
+# austinmleziva.com
+
+Personal portfolio and blog, built with [Jekyll](https://jekyllrb.com/) and the [Chirpy][chirpy] theme and deployed to
+GitHub Pages by `.github/workflows/pages-deploy.yml` on every push to `master`.
+
+## Running locally
+
+### Prerequisites
+
+- **Ruby 3.3 or later** (CI uses 3.3).
+  - Windows: install [RubyInstaller](https://rubyinstaller.org/downloads/) **with Devkit**, and let it run
+    `ridk install` at the end of setup.
+  - macOS/Linux: install Ruby with your package manager or a version manager such as `rbenv`.
+- **Bundler:** `gem install bundler`
+
+Alternatively, open the repository in the included dev container (`.devcontainer/`), which has Ruby preinstalled.
+
+### Install dependencies
+
+```shell
+bundle install
+```
+
+### Preview the site
+
+```shell
+bundle exec jekyll serve --livereload
+```
+
+Open <http://127.0.0.1:4000>. The page reloads automatically when you save a file. Changes to `_config.yml` require
+restarting the server. Add `--drafts` to also show posts in `_drafts/`.
+
+On macOS/Linux you can also run `bash tools/run.sh`.
+
+### Production build and link check
+
+This is what CI runs before deploying:
+
+```shell
+JEKYLL_ENV=production bundle exec jekyll build
+bundle exec htmlproofer _site --disable-external --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+```
+
+`htmlproofer` needs the `libcurl` library, which Windows doesn't include, so on Windows run the link check in the dev
+container or rely on CI.
+
+## Writing posts
+
+Posts live in `_posts/<category>/YYYY-MM-DD-title.md`. Each new post goes on its own branch and is merged to `master`
+through a pull request. See the [Chirpy writing guide](https://chirpy.cotes.page/posts/write-a-new-post/) for front
+matter options and formatting.
+
+---
+
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
